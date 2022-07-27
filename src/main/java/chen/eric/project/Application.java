@@ -67,16 +67,21 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws IOException {
+		final String defaultDir = "src/test/resources/chen/eric/project/skilling-j 2";
+		String dir;
 		if (args == null || args.length == 0) {
 			System.out.println("Usage:  run <directory>; <directory> is required");
+			System.out.println("Using default dir: " + defaultDir);
+			dir = defaultDir;
 		}
 		else {
-			final File file = new File(args[0]);
-			final Parser parser = new Parser();
-			parser.parseDirectory(file);
-
-			acceptQueries(parser);
+			dir = args[0];
 		}
+		final File file = new File(dir);
+		final Parser parser = new Parser();
+		parser.parseDirectory(file);
+
+		acceptQueries(parser);
 	}
 
 	public void acceptQueries(Parser parser) {
