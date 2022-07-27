@@ -69,13 +69,14 @@ public class Application implements CommandLineRunner {
 	public void run(String... args) throws IOException {
 		if (args == null || args.length == 0) {
 			System.out.println("Usage:  run <directory>; <directory> is required");
-			System.exit(-1);
 		}
-		final File file = new File(args[0]);
-		final Parser parser = new Parser();
-		parser.parseDirectory(file);
+		else {
+			final File file = new File(args[0]);
+			final Parser parser = new Parser();
+			parser.parseDirectory(file);
 
-		acceptQueries(parser);
+			acceptQueries(parser);
+		}
 	}
 
 	public void acceptQueries(Parser parser) {
