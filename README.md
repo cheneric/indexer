@@ -32,8 +32,10 @@ project  $ ./gradlew build
 2. Run the project:
 
 ```shell
-project  $ java -jar build/libs/project-0.0.1-SNAPSHOT.jar
+project  $ java -jar build/libs/project-0.0.1-SNAPSHOT.jar <directory-path-to-index>
 ```
+
+If no directory path to index is provided, then a default testing directory will be used.
 
 [//]: # (3. In a browser, open http://localhost:8080/)
 
