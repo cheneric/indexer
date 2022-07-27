@@ -1,0 +1,11 @@
+build/
+.DS_Store
+/.gradle/
+/.idea/
+/gradle/
+/images/
+/*.md
+/gradlew*
+/.dockerignore
+/.gitignore
+/Dockerfile
