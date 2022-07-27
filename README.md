@@ -26,13 +26,13 @@ Then, in the project root directory:
 1. Build the project:
 
 ```shell
-project  $ ./gradlew build
+indexer  $ ./gradlew build
 ```
 
 2. Run the project:
 
 ```shell
-project  $ java -jar build/libs/project-0.0.1-SNAPSHOT.jar <directory-path-to-index>
+indexer  $ java -jar build/libs/project-0.0.1-SNAPSHOT.jar <directory-path-to-index>
 ```
 
 If no directory path to index is provided, then a default testing directory will be used.
@@ -41,20 +41,31 @@ If no directory path to index is provided, then a default testing directory will
 
 #### 2. Run in a Docker container
 
-To run in a Docker container, **ensure you have Docker installed**.
+TODO
 
-Then, in the project root directory:
+[//]: # (To run in a Docker container, **ensure you have Docker installed**.)
 
-1. Build the Docker image:
+[//]: # ()
+[//]: # (Then, in the project root directory:)
 
-```shell
-project  $ docker build --rm -t chen.eric/project:latest .
-```
+[//]: # ()
+[//]: # (1. Build the Docker image:)
 
-2. Run the Docker image in interactive mode:
+[//]: # ()
+[//]: # (```shell)
 
-```shell
-project  $ docker run -it --rm --name project chen.eric/project:latest
-```
+[//]: # (indexer  $ docker build --rm -t chen.eric/indexer:latest .)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (2. Run the Docker image in interactive mode:)
+
+[//]: # ()
+[//]: # (```shell)
+
+[//]: # (indexer  $ docker run -it --rm --name indexer chen.eric/indexer:latest)
+
+[//]: # (```)
 
 [//]: # (3. In a browser, open http://localhost:8080/)
